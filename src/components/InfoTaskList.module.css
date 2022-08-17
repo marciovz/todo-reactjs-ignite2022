@@ -1,0 +1,30 @@
+.infoTasks {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoCreated, 
+.infoCompleted {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.infoCreated p {
+  font-size: 0.875rem;
+  color: var(--blue);
+}
+
+.infoCompleted p {
+  font-size: 0.875rem;
+  color: var(--purple);
+}
+
+.infoTasks span {
+  padding: 2px 8px;
+  color: var(--gray-200);
+  font-size: 0.75rem;
+  background: var(--gray-400);
+  border-radius: 999px;
+}
