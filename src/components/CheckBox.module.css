@@ -1,0 +1,16 @@
+.checkbox {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.checkbox svg {
+  color: var(--blue);
+}
+
+.checkbox svg.checked {
+  color: var(--purple);
+}
+
+.checkbox input {
+  display: none;
+}
