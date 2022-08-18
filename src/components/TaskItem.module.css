@@ -1,0 +1,34 @@
+.task {
+  display: flex;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  justify-content: center;
+  background: var(--gray-500);
+  border-radius: 8px;
+}
+ 
+.task p {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--gray-100);
+}
+
+.task p.taskDone {
+  color: var(--gray-300);
+  text-decoration: line-through;
+}
+
+.task button.trashButton {
+  display: flex;
+  width: 14px;
+  align-items: center;
+  color: var(--gray-300);
+  background: var(--gray-500);
+  border: 0;
+  cursor: pointer;
+  transition: color 0.1s;
+}
+
+.task button.trashButton:hover {
+  color: var(--danger);
+}
