@@ -4,14 +4,16 @@ import { Circle, CheckCircle } from 'phosphor-react';
 import style from './CheckBox.module.css';
 
 interface ICheckBoxProps {
-  checked: boolean
+  checked: boolean;
+  onChange: () => void;
 }
 
-export function CheckBox({ checked }: ICheckBoxProps) {
+export function CheckBox({ checked, onChange }: ICheckBoxProps) {
   const [isChecked, setIsChecked] = useState(checked);
 
   const handleChange = () => {
     setIsChecked(!isChecked);
+    onChange();
   }
 
   return (
