@@ -2,7 +2,6 @@
   display: flex;
   margin-top: 1.5rem;
   padding: 1rem;
-  justify-content: center;
   background: var(--gray-500);
   border-radius: 8px;
 }
@@ -21,7 +20,6 @@
 .task button.trashButton {
   display: flex;
   width: 14px;
-  align-items: center;
   color: var(--gray-300);
   background: var(--gray-500);
   border: 0;
