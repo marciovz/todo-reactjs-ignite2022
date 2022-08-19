@@ -63,6 +63,7 @@ export function TaskList() {
             : (
               tasks.map(task => ( 
                 <TaskItem 
+                  key={task.id}
                   task={task} 
                   onToggleTask={handleToggleDoneTask} 
                   onRemoveTask={handleRemoveTask}
