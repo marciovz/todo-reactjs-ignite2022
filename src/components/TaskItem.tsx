@@ -37,7 +37,7 @@ export function TaskItem({task, onToggleTask, onRemoveTask }: ITaskItemProps) {
       >
         <Trash />
       </button>
-  </div>
+    </div>
 
   )
 }

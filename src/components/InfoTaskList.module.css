@@ -13,11 +13,13 @@
 
 .infoCreated p {
   font-size: 0.875rem;
+  font-weight: 700;
   color: var(--blue);
 }
 
 .infoCompleted p {
   font-size: 0.875rem;
+  font-weight: 700;
   color: var(--purple);
 }
 
@@ -25,6 +27,8 @@
   padding: 2px 8px;
   color: var(--gray-200);
   font-size: 0.75rem;
+  font-weight: 700;
+
   background: var(--gray-400);
   border-radius: 999px;
 }
