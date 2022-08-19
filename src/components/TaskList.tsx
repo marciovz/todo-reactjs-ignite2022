@@ -4,6 +4,7 @@ import { v4 as uuidV4 } from 'uuid';
 import { FormAddTodo } from './FormAddTodo';
 import { InfoTaskList } from './InfoTaskList';
 import { TaskItem } from './TaskItem';
+import ClipBoard from '../assets/Clipboard.svg';
 
 import styles from './TaskList.module.css';
 
@@ -50,13 +51,25 @@ export function TaskList() {
 
       <main className={styles.taskList}>
         {
-          tasks.map(task => ( 
-            <TaskItem 
-              task={task} 
-              onToggleTask={handleToggleDoneTask} 
-              onRemoveTask={handleRemoveTask}
-            /> 
-          ))
+          tasks.length === 0 
+            ? (
+              <div className={styles.emptyTaskList}>
+                <img src={ClipBoard} alt="icone clipboard" />
+                
+                <p><strong>Você ainda não tem tarefas cadastradas</strong></p>
+                <p>Crie tarefas e organize seus itens a fazer</p>
+              </div>
+            ) 
+            : (
+              tasks.map(task => ( 
+                <TaskItem 
+                  task={task} 
+                  onToggleTask={handleToggleDoneTask} 
+                  onRemoveTask={handleRemoveTask}
+                /> 
+              ))
+            )
+
         }
       </main>
 
