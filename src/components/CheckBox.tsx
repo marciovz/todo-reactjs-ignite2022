@@ -19,7 +19,7 @@ export function CheckBox({ checked, onChange }: ICheckBoxProps) {
   return (
     <label className={style.checkbox} >
       {isChecked 
-        ? <CheckCircle className={style.checked} /> 
+        ? <CheckCircle className={style.checked} weight='fill' /> 
         : <Circle />
       }
 

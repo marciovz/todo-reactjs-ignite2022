@@ -9,6 +9,7 @@
 
 .checkbox svg.checked {
   color: var(--purple);
+  background: radial-gradient(var(--white) 40%, transparent 40%);
 }
 
 .checkbox input {
