@@ -1,8 +1,8 @@
 import { Trash} from 'phosphor-react';
 
-import { CheckBox } from './CheckBox';
+import { CheckBox } from '../CheckBox';
 
-import styles from './TaskItem.module.css';
+import styles from './styles.module.css';
 
 interface ITask {
   id: string;

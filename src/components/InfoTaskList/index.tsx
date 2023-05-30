@@ -1,6 +1,6 @@
 
 import { useMemo } from 'react';
-import styles from './InfoTaskList.module.css';
+import styles from './styles.module.css';
 
 interface ITask {
   id: string;

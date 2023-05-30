@@ -1,6 +1,7 @@
 import { ChangeEvent, FormEvent, useState } from 'react';
 import { PlusCircle } from 'phosphor-react';
-import styles from './FormAddTodo.module.css';
+
+import styles from './styles.module.css';
 
 interface IFormAddTodoProps {
   onSubmit: (title: string) => void;

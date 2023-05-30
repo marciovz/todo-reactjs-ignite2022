@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { v4 as uuidV4 } from 'uuid';
 
-import { FormAddTodo } from './FormAddTodo';
-import { InfoTaskList } from './InfoTaskList';
-import { TaskItem } from './TaskItem';
-import ClipBoard from '../assets/Clipboard.svg';
+import { FormAddTodo } from '../FormAddTodo';
+import { InfoTaskList } from '../InfoTaskList';
+import { TaskItem } from '../TaskItem';
+import ClipBoard from '../../assets/Clipboard.svg';
 
-import styles from './TaskList.module.css';
+import styles from './styles.module.css';
 
 interface ITask {
   id: string;

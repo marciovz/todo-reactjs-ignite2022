@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Circle, CheckCircle } from 'phosphor-react';
 
-import style from './CheckBox.module.css';
+import style from './styles.module.css';
 
 interface ICheckBoxProps {
   checked: boolean;
