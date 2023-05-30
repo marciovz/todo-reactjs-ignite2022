@@ -1,5 +1,5 @@
-import { PlusCircle } from 'phosphor-react';
 import { ChangeEvent, FormEvent, useState } from 'react';
+import { PlusCircle } from 'phosphor-react';
 import styles from './FormAddTodo.module.css';
 
 interface IFormAddTodoProps {
